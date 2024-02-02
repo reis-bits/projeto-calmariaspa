@@ -1,0 +1,33 @@
+@use '../abstract/mixins';
+@use '../abstract/variables';
+
+#nosso-espaco {
+    @include mixins.margem-central(80%);
+    .detalhes {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        .imgs-espaco {
+            width: 500px;
+        }
+        .espaco-textos {
+            @extend .imgs-espaco;
+            .titulo {
+                @include mixins.ff-fs-fc(variables.$ft-titulos, 1.8rem, variables.$cor-secundaria);
+                font-weight: 500;
+            }
+            .infos {
+                @include mixins.ff-fs-fc(variables.$ft-textos, 1.2rem, variables.$cor-primaria);
+            }
+            .separador {
+                width: 100%
+            }
+        }
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+        }
+    }
+}
