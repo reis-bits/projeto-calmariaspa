@@ -1,0 +1,72 @@
+@use '../abstract/variables';
+@use '../abstract/root';
+
+header {
+    background: variables.$gradiente-primario;
+    padding: 2rem;
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        .linha {
+            border-top: 1px solid black;
+            width: 80%;
+        }
+        ul {
+            display: inline-flex;
+            gap: 2rem;
+            li {
+                list-style-type: none;
+            }
+            a {
+                text-decoration: none;
+                color: variables.$cor-primaria;
+                font-weight: 500;
+                font-family: variables.$ft-textos;
+            }
+        }
+    }
+}
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1040px;
+    width: 80%;
+    margin: 0 auto;
+    gap: 72px;
+    .textos-home {
+        font-family: variables.$ft-titulos;
+        color: variables.$cor-primaria;
+        font-weight: 400;
+        gap: 32px;
+        h1 {
+            height: 189px;
+            font-size: 42px;
+            line-height: 63px;
+            width: 486px;
+            span {
+                color: variables.$cor-secundaria;
+            }
+        }
+        .btn-main {
+            width: 280px;
+            height: 66px;
+            border-radius: 40px;
+            padding: 24px;
+            gap: 10px;
+            background-color: variables.$cor-secundaria;
+            color: #FFFFFF;
+            font-family: variables.$ft-textos;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 18px;
+        }
+    }
+    .img-home {
+        img {
+            width: 474px;
+        }
+    }
+}
