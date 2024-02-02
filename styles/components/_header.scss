@@ -23,6 +23,10 @@ header {
                 text-decoration: none;
                 @include mixins.ff-fs-fc(variables.$ft-textos, 1rem, variables.$cor-primaria);
                 font-weight: 500;
+                &:hover {
+                    font-weight: 700;
+                    transition: 500ms;
+                }
             }
         }
     }
@@ -52,14 +56,19 @@ header {
             width: 280px;
             height: 66px;
             border-radius: 40px;
+            border: 0px transparent;
             padding: 24px;
             gap: 10px;
-            background-color: variables.$cor-secundaria;
+            background-color: variables.$cor-default;
             color: #FFFFFF;
             font-family: variables.$ft-textos;
             font-weight: 600;
             font-size: 22px;
             line-height: 18px;
+            &:hover {
+                background-color: variables.$cor-secundaria;
+                transition: 500ms;
+            }
         }
     }
     .img-home {
