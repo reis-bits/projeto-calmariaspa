@@ -194,4 +194,85 @@ header nav ul a:hover {
 #desconto .input-btn button:hover {
   background: #4e75ff;
   transition: 500ms;
+}
+
+#contatos {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#contatos .contatos-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.6rem;
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+}
+#contatos .contatos-imgs img:nth-child(n+2) {
+  width: 48%;
+}
+#contatos .contatos-form {
+  max-width: 50%;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  display: flex;
+  flex-flow: column wrap;
+  gap: 24x;
+  border-radius: 48px;
+  padding: 2rem 3rem;
+}
+#contatos .contatos-form .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 31px;
+  color: #4e75ff;
+}
+#contatos .contatos-form .infos, #contatos .contatos-form .inputs .form-group label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  color: #0C0421;
+}
+#contatos .contatos-form .inputs {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+#contatos .contatos-form .inputs input, #contatos .contatos-form .inputs .btn, #contatos .contatos-form .inputs .form-group textarea {
+  border-radius: 25px;
+  padding: 1rem;
+  border: none;
+}
+#contatos .contatos-form .inputs .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contatos .contatos-form .inputs .form-group label {
+  font-weight: 700;
+}
+#contatos .contatos-form .inputs .btn {
+  background: #CAD4FA;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+}
+#contatos .contatos-form .inputs .btn:hover {
+  background: #4e75ff;
+  transition: 500ms;
+}
+
+footer {
+  background: #E8F5C8;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
 }/*# sourceMappingURL=styles.css.map */
